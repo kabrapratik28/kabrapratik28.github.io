@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · kabrapratik28</title>
+<meta name="description" content="Free, open-source projects by kabrapratik28: ThumbFree, Everest, and How AI Agents Work.">
+<meta property="og:title" content="Projects by kabrapratik28">
+<meta property="og:description" content="ThumbFree (offline voice typing), Everest (local AI writing on Mac), and an interactive course on how AI agents work.">
+<meta property="og:url" content="https://kabrapratik28.github.io/">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #fbfaf7; --card: #ffffff; --text: #1c1e21; --text-2: #464b53; --text-3: #686e78;
+    --border: #e4e0d6; --border-strong: #cdc6b6; --link: #1f5fbf; --focus: #2563eb;
+    --shadow: 0 1px 2px rgba(20, 18, 10, .04), 0 8px 24px rgba(20, 18, 10, .07);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1116; --card: #151a21; --text: #e6e8ec; --text-2: #b6bcc6; --text-3: #8d94a0;
+      --border: #262d38; --border-strong: #3a4556; --link: #8ab6ff; --focus: #8ab6ff;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 24px rgba(0, 0, 0, .3);
+      color-scheme: dark;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 18px/1.6 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 68rem; margin: 0 auto; padding: 4.5rem 1.4rem 3rem; }
+  a { color: var(--link); text-underline-offset: 2px; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .handle { margin: 0 0 .4rem; font-size: .9rem; font-weight: 600; color: var(--text-3); }
+  .handle a { color: inherit; text-decoration: none; }
+  .handle a:hover { color: var(--text); text-decoration: underline; }
+  h1 { margin: 0; font-size: clamp(2.4rem, 1.6rem + 3vw, 3.4rem); line-height: 1.08; letter-spacing: -.03em; }
+  .intro { margin: .8rem 0 2.6rem; max-width: 36rem; font-size: 1.2rem; color: var(--text-2); }
+  .tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1.2rem; }
+  .tile {
+    position: relative; display: flex; flex-direction: column;
+    padding: 1.5rem 1.5rem 1.3rem; border: 1px solid var(--border); border-radius: 18px;
+    background: var(--card); box-shadow: var(--shadow);
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .tile:hover { transform: translateY(-2px); border-color: var(--border-strong); }
+  .tile img { width: 64px; height: 64px; border-radius: 15px; margin-bottom: 1.1rem; }
+  .tile h2 { margin: 0 0 .45rem; font-size: 1.35rem; letter-spacing: -.01em; }
+  .tile h2 a { color: var(--text); text-decoration: none; }
+  .tile h2 a::after { content: ""; position: absolute; inset: 0; border-radius: 18px; }
+  .tile h2 a:focus-visible { outline: none; }
+  .tile h2 a:focus-visible::after { outline: 2px solid var(--focus); outline-offset: 3px; }
+  .tile p { margin: 0 0 1rem; color: var(--text-2); font-size: 1rem; }
+  .chips { list-style: none; margin: 0 0 1.2rem; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+  .chips li { font-size: .82rem; font-weight: 600; color: var(--text-2); padding: .15rem .6rem; border: 1px solid var(--border); border-radius: 999px; }
+  .links { margin-top: auto; display: flex; gap: 1.1rem; font-size: .95rem; font-weight: 600; }
+  .links a { position: relative; z-index: 1; }
+  footer { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--border); font-size: .9rem; color: var(--text-3); }
+  footer a { color: inherit; }
+  @media (prefers-reduced-motion: reduce) { .tile { transition: none; } .tile:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="handle"><a href="https://www.linkedin.com/in/kabrapratik28/">About me</a><span aria-hidden="true"> · </span><a href="https://github.com/kabrapratik28">GitHub</a></p>
+    <h1>Projects</h1>
+    <p class="intro">Two apps and a course. All free and open source.</p>
+  </header>
+
+  <ul class="tiles">
+    <li class="tile">
+      <img src="img/thumbfree.svg" alt="" width="64" height="64">
+      <h2><a href="/ThumbFree/">ThumbFree</a></h2>
+      <p>Voice typing for Android and iPhone that works offline. Speech to text runs on your phone, with no account and no ads.</p>
+      <ul class="chips" aria-label="Platforms"><li>Android</li><li>iPhone</li><li>Open source</li></ul>
+      <p class="links"><a href="/ThumbFree/">Website</a><a href="https://github.com/kabrapratik28/ThumbFree">GitHub</a></p>
+    </li>
+
+    <li class="tile">
+      <img src="img/everest.png" alt="" width="64" height="64">
+      <h2><a href="/Everest/">Everest</a></h2>
+      <p>Rewrite selected text in any Mac app with a keyboard shortcut. The language model runs on your Mac, not in the cloud.</p>
+      <ul class="chips" aria-label="Platforms"><li>macOS</li><li>Open source</li></ul>
+      <p class="links"><a href="/Everest/">Website</a><a href="https://github.com/kabrapratik28/Everest">GitHub</a></p>
+    </li>
+
+    <li class="tile">
+      <img src="img/agents.svg" alt="" width="64" height="64">
+      <h2><a href="/how-agents-work/">How AI Agents Work</a></h2>
+      <p>An interactive course on how AI agents work: the loop, tools, context, memory, subagents, safety, and how to design your own.</p>
+      <ul class="chips" aria-label="Format"><li>Course</li><li>Interactive</li><li>Free</li></ul>
+      <p class="links"><a href="/how-agents-work/">Open the course</a><a href="https://github.com/kabrapratik28/how-agents-work">GitHub</a></p>
+    </li>
+  </ul>
+
+  <footer><a href="https://www.linkedin.com/in/kabrapratik28/">About me</a> on LinkedIn. More projects on <a href="https://github.com/kabrapratik28">GitHub</a>.</footer>
+</main>
+</body>
+</html>
