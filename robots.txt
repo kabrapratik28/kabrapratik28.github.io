@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kabrapratik28.github.io/sitemap.xml
+Sitemap: https://kabrapratik28.github.io/ThumbFree/sitemap.xml
+Sitemap: https://kabrapratik28.github.io/Everest/sitemap.xml
